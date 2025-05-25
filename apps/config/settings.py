@@ -57,12 +57,6 @@ INSTALLED_APPS = [
     # Serve UI pages
     "apps.pages",
 
-    # Dynamic DT
-    "apps.dyn_dt",
-
-    # Dynamic API
-    "apps.dyn_api",
-
     # Charts
     "apps.charts",
 
@@ -82,7 +76,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "config.urls"
+ROOT_URLCONF = "apps.config.urls"
 
 HOME_TEMPLATES = os.path.join(BASE_DIR, 'templates')
 
@@ -102,7 +96,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "config.wsgi.application"
+WSGI_APPLICATION = "apps.config.wsgi.application"
 
 
 # Database
