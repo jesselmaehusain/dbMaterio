@@ -200,3 +200,6 @@ REST_FRAMEWORK = {
     ],
 }
 ########################################
+ADMIN_BLACK = {
+    "site_title": "dbMaterio",
+}
